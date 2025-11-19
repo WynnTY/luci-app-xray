@@ -19,8 +19,9 @@ jobs:
       matrix:
         include:
           - arch: armv8
-            sdk_url_path: https://downloads.openwrt.org/releases/23.05.5/targets/ipq40xx/generic/
-            sdk_name: -sdk-23.05.5-ipq40xx-generic_
+            sdk_url_path: https://downloads.openwrt.org/releases/23.05.5/targets/rockchip/armv8
+            sdk_name: -sdk-23.05.5-rockchip-armv8_
+
     env:
       SDK_URL_PATH: ${{ matrix.sdk_url_path }}
       SDK_NAME: ${{ matrix.sdk_name }}
